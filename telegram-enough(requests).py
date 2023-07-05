@@ -15,7 +15,7 @@ from sms import SendSms
 token = environ.get('6345381785:AAFWNjhYIqfG7r53-J13lQTO5Dfa97tnZ5c')
 
 def getUpdate():
-    url = 'https://api.telegram.org/bot{}/getUpdates'.format(token)
+    url = 'https://api.telegram.org/bot{}/getUpdates'.format(6345381785:AAFWNjhYIqfG7r53-J13lQTO5Dfa97tnZ5c)
     r = requests.get(url)
     x = 0
     while 1 :
@@ -26,7 +26,7 @@ def getUpdate():
             return (r.json()["result"][x-1]["message"]["chat"]["id"]), r.json()["result"][x-1]["message"]["text"], (r.json()["result"][x-1]["message"]["date"])
 
 def sendMessage(text, id):
-    requests.get(f"https://api.telegram.org/bot{token}/sendMessage?chat_id={id}&text=" + text, timeout=3)
+    requests.get(f"https://api.telegram.org/bot{6345381785:AAFWNjhYIqfG7r53-J13lQTO5Dfa97tnZ5c}/sendMessage?chat_id={id}&text=" + text, timeout=3)
     
 date_list = []
 while 1:
