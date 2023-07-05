@@ -52,7 +52,7 @@ async def ayarla(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         await update.message.reply_text(f"Geçerli komut yazınız\!\nYardım için *_/help_* yazınız\.", parse_mode='MarkdownV2')
     
 def main() -> None:
-    application = Application.builder().token(TOKEN).build()
+    application = Application.builder().token(6345381785:AAFWNjhYIqfG7r53-J13lQTO5Dfa97tnZ5c).build()
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help_command))
